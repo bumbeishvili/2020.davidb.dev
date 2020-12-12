@@ -48,8 +48,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.css">
 
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
   <!-- Icons -->
   <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js"
@@ -64,7 +65,15 @@
 
 
 
+  <style>
+    .div-number-7 {
+      display: none;
+    }
 
+    p {
+      font-size: 21px !important;
+    }
+  </style>
 
 
   <!-- Analytics Code -->
@@ -116,9 +125,9 @@
 
         <div class="wrap test-class">
 
- 
 
-      
+
+
 
 
           <applause-button url="https://bumbeishvili.github.io/blog/analyzing-it-survey-2020"
@@ -135,6 +144,12 @@
         <div class="wrap">
 
           <style>
+            @media only screen and (max-width: 600px) {
+              body {
+                max-width: calc(100%);
+              }
+            }
+
             .observable-wrapper svg {
               display: block;
               margin: 0 auto;
@@ -177,7 +192,7 @@
             .single p,
             .single ul,
             .single ol {
-              max-width: 80% !important;
+              max-width: 100% !important;
             }
 
             input {
@@ -210,14 +225,13 @@
             document.querySelector('.full-page-blog-width').innerHTML =notebook.modules[0].variables
             .filter(d=&gt;d)
             .map((d,i)=&gt;` &lt;d`+`iv class="observable-wrapper div-number-${i}"
-            ${i&gt;62?"style='display:none'":''}&gt;&lt;/`+`div&gt;`)
+            ${i&gt;57?"style='display:none'":''}&gt;&lt;/`+`div&gt;`)
             .join('');
 
             console.log('created')
 
 
-            import {Inspector, Runtime} from "https://unpkg.com/@observablehq/<a href="/cdn-cgi/l/email-protection"
-              class="__cf_email__" data-cfemail="6d1f1803190400082d5e">[email&#160;protected]</a>/dist/runtime.js";
+            import {Inspector, Runtime} from "https://unpkg.com/@observablehq/runtime@3/dist/runtime.js";
 
 
 
@@ -264,14 +278,13 @@
   </div>
 
   <style>
-    body{
-      width:800px;
-      margin:0 auto;
-      margin-bottom:40px;
+    body {
+      width: 800px;
+      margin: 0 auto;
+      margin-bottom: 40px;
 
     }
-
-    </style>
+  </style>
 
 
 
