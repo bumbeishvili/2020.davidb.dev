@@ -92,15 +92,32 @@
 
 
 
-<style>
-  .fb-share-button{
-    position:fixed;
-    right:20px;
-    bottom:130px;
-  }
-</style>
+  <style>
+    .fb-share-button {
+      position: fixed;
+      right: 20px;
+      bottom: 130px;
+    }
+  </style>
 
 
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2852574361732757');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2852574361732757&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
 
 
 </head>
@@ -108,8 +125,8 @@
 
 <body class="loading" data-site-url="http://davidb.dev" data-page-url="/blog/analyzing-it-survey-2020">
 
-  <div class="fb-share-button" data-href="https://2020.davidb.dev/" data-layout="button_count"
-    data-size="large"><a target="_blank"
+  <div class="fb-share-button" data-href="https://2020.davidb.dev/" data-layout="button_count" data-size="large"><a
+      target="_blank"
       href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
       class="fb-xfbml-parse-ignore">Share</a></div>
 
@@ -123,6 +140,9 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'))
   </script>
+
+
+
 
 
 
